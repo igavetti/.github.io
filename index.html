@@ -62,12 +62,51 @@
             width: 100%;
             bottom: 0;
         }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #003366;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-event {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .timeline-event::before {
+            content: ' ';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #003366;
+            border-radius: 50%;
+            left: 50%;
+            margin-left: -5px;
+            top: 10px;
+        }
+        .timeline-event h3 {
+            margin: 0;
+            color: #003366;
+        }
+        .timeline-event p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Ilaria Gavetti</h1>
-        <p>Research Master’s Student in Brain and Cognitive Sciences | Computational Neuroscience and AI Enthusiast</p>
+        <p>Research Master’s Student in Brain and Cognitive Sciences | Aspiring Computational Neuroscience PhD student</p>
     </header>
 
     <section id="about">
@@ -76,9 +115,33 @@
         <p>I am currently pursuing a Research Master's in Brain and Cognitive Sciences at the University of Amsterdam. My academic background encompasses Cognitive Science and Artificial Intelligence. My research focuses on computational neuroscience and machine learning, where I aim to contribute to advancing our understanding of brain function and artificial intelligence.</p>
     </section>
 
+    <section id="history">
+        <h2>History</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <h3>September 2024</h3>
+                <p>Started working on Literature review.</p>
+            </div>
+                <h3>July 2024</h3>
+                <p>Completed Research Project 1 with grade 8.5/10.</p>
+            </div>
+                <h3>January 2024</h3>
+                <p>Started Research Project 1 at the Donders institute for Brain Cognition and Behaviour in Nijmegen (NL).</p>
+            </div>
+                <h3>September 2023</h3>
+                <p>Started Research Master’s in Brain and Cognitive Sciences at the University of Amsterdam (NL).</p>
+            </div>
+            <div class="timeline-event">
+                <h3>July 2023</h3>
+                <p>Graduated with a Bachelor’s in Cognitive Science from Tilburg University (NL).</p>
+            </div>
+            <!-- Add more events here -->
+        </div>
+    </section>
+
     <section id="cv">
         <h2>Curriculum Vitae</h2>
-        <p>You can download my CV <a href="CV_updated_IG.pdf" target="_blank">here</a>.</p>
+        <p>You can download my CV <a href="cv_UPDATED_IG.pdf" target="_blank">here</a>.</p>
     </section>
 
     <section id="projects">
@@ -100,4 +163,3 @@
     </footer>
 </body>
 </html>
-
