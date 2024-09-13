@@ -5,25 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilaria Gavetti - Personal Website</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background-color: #4CAF50; color: white; padding: 20px; text-align: center; }
-        section { margin: 20px; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        ul { list-style-type: none; }
-        ul li { margin: 10px 0; }
-        a { color: #4CAF50; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        footer { text-align: center; padding: 10px; background-color: #4CAF50; color: white; position: fixed; width: 100%; bottom: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        a {
+            color: #003366;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Ilaria Gavetti</h1>
-        <p>Welcome to my personal website! I am a master’s student in Brain and Cognitive Sciences with a passion for computational neuroscience and AI.</p>
+        <p>Research Master’s Student in Brain and Cognitive Sciences | Computational Neuroscience and AI Enthusiast</p>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am currently pursuing my MSc in Brain and Cognitive Sciences at the University of Amsterdam. I have a background in Cognitive Science and Artificial Intelligence and have worked on various research projects related to computational neuroscience and machine learning.</p>
+        <img src="your-profile-picture.jpg" alt="Ilaria Gavetti" class="profile-pic">
+        <p>I am currently pursuing a Research Master's in Brain and Cognitive Sciences at the University of Amsterdam. My academic background encompasses Cognitive Science and Artificial Intelligence. My research focuses on computational neuroscience and machine learning, where I aim to contribute to advancing our understanding of brain function and artificial intelligence.</p>
+    </section>
+
+    <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <p>You can download my CV <a href="path-to-your-cv.pdf" target="_blank">here</a>.</p>
     </section>
 
     <section id="projects">
@@ -45,3 +100,4 @@
     </footer>
 </body>
 </html>
+
