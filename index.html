@@ -62,82 +62,12 @@
             width: 100%;
             bottom: 0;
         }
-
-        /* Timeline Styling */
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px 0;
-        }
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            background-color: #003366;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
-        }
-        .timeline-event {
-            position: relative;
-            margin: 20px 0;
-            padding: 20px;
-            width: 45%;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .timeline-event::before {
-            content: ' ';
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            background-color: #003366;
-            border-radius: 50%;
-            top: 20px;
-            left: -10px;
-        }
-        .timeline-event.left {
-            left: 0;
-        }
-        .timeline-event.right {
-            left: 55%;
-        }
-        .timeline-event.right::before {
-            left: -20px;
-        }
-        .timeline-event h3 {
-            margin: 0 0 10px;
-            color: #003366;
-        }
-        .timeline-event p {
-            margin: 5px 0;
-        }
-
-        /* Responsive */
-        @media screen and (max-width: 768px) {
-            .timeline::after {
-                left: 20px;
-            }
-            .timeline-event {
-                width: calc(100% - 40px);
-                left: 20px;
-            }
-            .timeline-event.right {
-                left: 20px;
-            }
-            .timeline-event::before {
-                left: -30px;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Ilaria Gavetti</h1>
-        <p>Research Master’s Student in Brain and Cognitive Sciences | Computational Neuroscience and AI Enthusiast</p>
+        <p>Research Master’s Student in Brain and Cognitive Sciences | Aspiring Computational Neuroscience PhD student</p>
     </header>
 
     <section id="about">
@@ -148,28 +78,14 @@
 
     <section id="history">
         <h2>History</h2>
-        <div class="timeline">
-            <div class="timeline-event left">
-                <h3>October 2024</h3>
-                <p>Upcoming Teaching Assistanship role at the University of Amsterdam for the Python based-classes.</p>
-            <div class="timeline-event right">
-                <h3>September 2024</h3>
-                <p>Started Literature review under the supervision of Prof. Marijn van Wingerden on the topic of structure-aware pretext self-supervised tasks for EEG data.</p>
-            <div class="timeline-event left">
-                <h3>July 2024</h3>
-                <p>Completed Research Project 1 with grade: 8.5/10 (Dutch grading system).</p>
-            <div class="timeline-event right">
-                <h3>January 2024</h3>
-                <p>Started Research Project 1 at the Donders institute for Brain Cognition and Behaviour in Nijmegen (NL), focusing on the refinement of an interpretable functional-genetic model of the zebrafish brain.</p>
-            <div class="timeline-event left">
-                <h3>September 2023</h3>
-                <p>Started Research Master’s in Brain and Cognitive Sciences at the University of Amsterdam (NL).</p>
-            <div class="timeline-event right">
-                <h3>July 2023</h3>
-                <p>Graduated with a Bachelor’s in Cognitive Science and Artificial Intelligence from Tilburg University (NL).</p>
-            </div>
-            <!-- Add more events as necessary -->
-        </div>
+        <ul>
+            <li><strong>October 2024:</strong> Upcoming Teaching Assistant role at the University of Amsterdam for Python-based classes.</li>
+            <li><strong>September 2024:</strong> Started Literature review on structure-aware pretext self-supervised tasks for EEG data under Prof. Marijn van Wingerden.</li>
+            <li><strong>July 2024:</strong> Completed Research Project 1 with a grade of 8.5/10.</li>
+            <li><strong>January 2024:</strong> Started Research Project 1 at the Donders Institute for Brain Cognition and Behaviour in Nijmegen, focusing on interpretable functional-genetic models of the zebrafish brain.</li>
+            <li><strong>September 2023:</strong> Started Research Master’s in Brain and Cognitive Sciences at the University of Amsterdam.</li>
+            <li><strong>July 2023:</strong> Graduated with a Bachelor’s in Cognitive Science and Artificial Intelligence from Tilburg University.</li>
+        </ul>
     </section>
 
     <section id="cv">
@@ -180,7 +96,7 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li><a href="https://github.com/your-username/project-3">Research Project 1: Interpretable models for large scale functional genetic data</a></li>
+            <li><a href="https://github.com/your-username/project-3">Research Project 1: Interpretable models for large-scale functional genetic data</a></li>
             <li><a href="https://github.com/your-username/project-1">Mini-project: Exploring recurrency in bio-inspired CNNs</a></li>
         </ul>
     </section>
