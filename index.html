@@ -26,6 +26,7 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
+            font-weight: bold;
         }
 
         header p {
@@ -72,7 +73,8 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
-            margin-bottom: 20px;
+            margin: 10px;
+            display: inline-block;
         }
 
         ul {
@@ -83,6 +85,10 @@
         ul li {
             margin: 15px 0;
             line-height: 1.6em;
+        }
+
+        ul li strong {
+            font-weight: bold;
         }
 
         a {
@@ -112,6 +118,14 @@
                 opacity: 1;
             }
         }
+        
+        .highlight {
+            background-color: #e3f2fd;
+            border-left: 5px solid #4A90E2;
+            padding: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -130,25 +144,34 @@
     <!-- Header -->
     <header>
         <h1>Ilaria Gavetti</h1>
-        <p>Research Master’s Student in Brain and Cognitive Sciences | Aspiring Computational Neuroscience PhD student</p>
+        <p>Research Master’s Student in Brain and Cognitive Sciences | Aspiring Computational Neuroscience PhD Student</p>
     </header>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <img src="profile.jpeg" alt="Ilaria Gavetti" class="profile-pic fade-in">
-        <img src="profile2.jpeg" alt="Ilaria Gavetti" class="profile-pic fade-in">
-        <img src="profile3.jpeg" alt="Ilaria Gavetti" class="profile-pic fade-in">
-        <img src="profile4.jpeg" alt="Ilaria Gavetti" class="profile-pic fade-in">
-        <p>Originally from northern Italy, I am currently pursuing a Research Master's in Brain and Cognitive Sciences at the University of Amsterdam. My academic background encompasses Cognitive Science and Artificial Intelligence. My academic interests focus on computational neuroscience and machine/deep learning, where I aim to contribute to advancing our understanding of brain function and artificial intelligence.</p>
+        <div>
+            <img src="profile.jpeg" alt="Ilaria Gavetti" class="profile-pic fade-in">
+            <img src="profile2.jpeg" alt="Ilaria Gavetti" class="profile-pic fade-in">
+            <img src="profile3.jpeg" alt="Ilaria Gavetti" class="profile-pic fade-in">
+            <img src="profile4.jpeg" alt="Ilaria Gavetti" class="profile-pic fade-in">
+        </div>
+        <p>I am originally from northern Italy and am currently pursuing a <strong>Research Master’s in Brain and Cognitive Sciences</strong> at the <strong>University of Amsterdam</strong>. My background spans Cognitive Science and Artificial Intelligence, with a focus on computational neuroscience and machine/deep learning. My goal is to contribute to advancing our understanding of brain function and artificial intelligence.</p>
     </section>
 
     <!-- PhD Candidacy Section -->
     <section id="why-phd-candidate">
         <h2>Why I Would Make a Strong PhD Candidate</h2>
-        <p>My academic journey has taken me through renowned universities, where I’ve had the privilege to learn from leading researchers in their respective fields. I took Python programming classes from Prof. dr. ir. Pieter Spronck, a Computer Vision course taught by Prof. dr. Eric Postma, and both introductory and advanced classes in Neural Cognitive Modeling by Dr. Raquel Garrido Alhama and Dr. Willem Zuidema. Additionally, I deepened my understanding of neuroimaging through a BOLD fMRI class led by Dr. Steven Scholte and Dr. Joe Bathelt.</p>
-        <p>The focus throughout my studies has always been on applying what I have learned, giving me the opportunity to work on real-world problems and explore a broad spectrum of topics, from neuroscience to artificial intelligence. This academic experience has not only provided me with a solid theoretical foundation but also allowed me to develop practical skills, particularly in Python coding, machine learning, and computational modeling. These experiences have equipped me with the tools to approach complex problems analytically and find solutions effectively, which I believe are essential skills for any research role.</p>
-        <p>On a personal level, I always aim to be proactive and adaptable. I have a good sense of what is needed in different work situations, and I enjoy planning and organizing my work to ensure progress. I believe these qualities, combined with my academic background and technical expertise, make me well-prepared for the demands and challenges of a PhD program.</p>
+        <div class="highlight">
+            My academic journey includes courses from leading experts in the field:
+            <ul>
+                <li><strong>Python Programming:</strong> Prof. dr. ir. Pieter Spronck</li>
+                <li><strong>Computer Vision:</strong> Prof. dr. Eric Postma</li>
+                <li><strong>Neural Cognitive Modeling:</strong> Dr. Raquel Garrido Alhama and Dr. Willem Zuidema</li>
+                <li><strong>Neuroimaging:</strong> Dr. Steven Scholte and Dr. Joe Bathelt</li>
+            </ul>
+        </div>
+        <p>My focus has been on applying theoretical knowledge to real-world problems, developing practical skills in <strong>Python coding, machine learning, and computational modeling</strong>. I am proactive, adaptable, and enjoy planning and organizing to ensure progress, qualities that I believe are crucial for a successful PhD journey.</p>
     </section>
 
     <!-- History Section -->
@@ -167,22 +190,22 @@
                 <img src="july2024.jpeg" alt="July 2024 Image" style="width: 200px; height: auto; margin-top: 10px;">
             </li>
             <li>
-                <strong>June 2024:</strong> Attended the 2024 edition of the Amsterdam Brain Cognition summer school, with topic Neuro-AI.
+                <strong>June 2024:</strong> Attended the 2024 Amsterdam Brain Cognition summer school, focusing on Neuro-AI.
                 <br>
                 <img src="june2024.jpeg" alt="June 2024 Image" style="width: 200px; height: auto; margin-top: 10px;">
             </li>
             <li>
-                <strong>January 2024:</strong> Started Research Project 1 at the Computational Neuroscience lab by Radboud University (NL), focusing on interpretable functional-genetic models of the zebrafish brain.
+                <strong>January 2024:</strong> Began Research Project 1 at the Computational Neuroscience lab by Radboud University (NL), focusing on interpretable functional-genetic models of the zebrafish brain.
                 <br>
                 <img src="january2024.jpeg" alt="January 2024 Image" style="width: 200px; height: auto; margin-top: 10px;">
             </li>
             <li>
-                <strong>October 2023:</strong> Participated in the Dutch National Science weekend at Mindlabs (Tilburg, NL), demonstrating how a BCI setup can be used for spelling tasks.
+                <strong>October 2023:</strong> Participated in the Dutch National Science weekend at Mindlabs (Tilburg, NL), showcasing BCI setups for spelling tasks.
                 <br>
                 <img src="october2023.jpeg" alt="October 2023 Image" style="width: 200px; height: auto; margin-top: 10px;">
             </li>
             <li>
-                <strong>September 2023:</strong> Started Research Master’s in Brain and Cognitive Sciences at the University of Amsterdam (NL).
+                <strong>September 2023:</strong> Commenced Research Master’s in Brain and Cognitive Sciences at the University of Amsterdam (NL).
                 <br>
                 <img src="september2023.jpeg" alt="September 2023 Image" style="width: 200px; height: auto; margin-top: 10px;">
             </li>
@@ -197,32 +220,4 @@
     <!-- CV Section -->
     <section id="cv">
         <h2>Curriculum Vitae</h2>
-        <p>You can download my CV <a href="https://drive.google.com/file/d/1ep6hzrQfkc4EBcbLPJKpleObO2MxcmhZ/view?usp=sharing" target="_blank">here</a>.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://drive.google.com/file/d/12yHzkQ9_TR9Aj7U4has
-
-                <ul>
-            <li><a href="https://drive.google.com/file/d/12yHzkQ9_TR9Aj7U4hasdC4blx2KxdX_Y/view?usp=sharing">Interpretable models for large-scale functional genetic data</a></li>
-            <li><a href="https://drive.google.com/file/d/1gGFcxdllD6A7BM0-oQ9CGliV1se3K5ZD/view?usp=sharing">Exploring recurrency in bio-inspired convolutional neural-networks</a></li>
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out via <a href="mailto:ilaria.gavetti@gmail.com">email</a> or connect with me on <a href="https://linkedin.com/in/ilariagavetti">LinkedIn</a>.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Ilaria Gavetti</p>
-    </footer>
-
-</body>
-
-</html>
+        <p>Download my CV <a href="https://drive.google.com/file/d/1ep6hzrQfkc4EBcbLPJKpleObO2MxcmhZ/view?usp
