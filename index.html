@@ -17,25 +17,26 @@
         }
 
         header {
-            background: linear-gradient(90deg, #4A90E2, #4FC3F7);
+            background: linear-gradient(90deg, #3A7D99, #61A9D8);
             color: white;
-            padding: 20px;
+            padding: 40px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-            font-weight: bold;
+            font-size: 3em;
+            font-weight: 700;
         }
 
         header p {
-            font-size: 1.2em;
+            font-size: 1.3em;
+            margin-top: 10px;
         }
 
         nav {
-            background-color: #4A90E2;
-            padding: 10px;
+            background-color: #3A7D99;
+            padding: 15px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -44,7 +45,7 @@
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1em;
@@ -56,16 +57,18 @@
 
         section {
             margin: 40px auto;
-            padding: 30px;
+            padding: 40px;
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
             max-width: 900px;
-            transition: transform 0.3s ease;
         }
 
-        section:hover {
-            transform: translateY(-5px);
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #3A7D99;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .profile-pic {
@@ -75,6 +78,14 @@
             object-fit: cover;
             margin: 10px;
             display: inline-block;
+        }
+
+        .highlight {
+            background-color: #eaf4fc;
+            border-left: 5px solid #3A7D99;
+            padding: 15px;
+            margin: 20px 0;
+            font-weight: bold;
         }
 
         ul {
@@ -87,57 +98,21 @@
             line-height: 1.6em;
         }
 
-        ul li strong {
-            font-weight: bold;
-        }
-
-        a {
-            color: #4A90E2;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #4A90E2;
+            background-color: #3A7D99;
             color: white;
             margin-top: 40px;
         }
 
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 1s forwards;
-        }
-
-        @keyframes fadeIn {
-            100% {
-                opacity: 1;
-            }
-        }
-        
-        .highlight {
-            background-color: #e3f2fd;
-            border-left: 5px solid #4A90E2;
-            padding: 10px;
-            margin: 20px 0;
-            font-weight: bold;
-        }
-
-        .project-list {
-            margin: 0;
-            padding: 0;
-        }
-
-        .project-list li {
-            margin: 10px 0;
-        }
-
         .project-list a {
             font-weight: bold;
+            color: #3A7D99;
+        }
+
+        .project-list a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -185,83 +160,50 @@
             </ul>
         </div>
         <p>My focus has been on applying theoretical knowledge to real-world problems, developing practical skills in <strong>Python coding, machine learning, and computational modeling</strong>. I am proactive, adaptable, and enjoy planning and organizing to ensure progress, qualities that I believe are crucial for a successful PhD journey.</p>
-    </section>
 
+        <div class="highlight">
+            <h3>Impact of My Research Master's Degree</h3>
+            <p>My Research Master’s program has deeply prepared me for a PhD by providing hands-on research experience, interdisciplinary exposure, and involvement in academic publications. Some key highlights include:</p>
+            <ul>
+                <li><strong>Research Projects:</strong> Throughout my Master's, I completed several research projects such as developing interpretable models for high-dimensional EEG data and exploring functional-genetic models of zebrafish brains. These projects have honed my skills in data analysis, computational modeling, and the interdisciplinary integration of neuroscience and AI.</li>
+                <li><strong>Literature Thesis:</strong> I authored a comprehensive literature thesis on self-supervised learning in brain data analysis, which involved extensive research and critical analysis, helping me solidify a deep understanding of both theoretical and practical challenges in neuroscience research.</li>
+                <li><strong>Interdisciplinary Approach:</strong> The program has equipped me with the ability to work at the intersection of neuroscience, AI, and cognitive science, ensuring a well-rounded approach to problem-solving.</li>
+                <li><strong>Extracurricular Activities:</strong> I actively contributed to the <em>ABS Journal</em>, where I reviewed papers and collaborated with researchers from various domains, further enhancing my academic writing and peer-reviewing skills.</li>
+            </ul>
+            <p>These experiences have provided me with the necessary tools and knowledge to excel in a PhD program, and I am eager to contribute to groundbreaking research in the field of computational neuroscience.</p>
+        </div>
+    </section>
 
     <!-- Research Interests Section -->
     <section id="research-interests">
         <h2>Research Interests</h2>
         <div class="highlight">
-            <p>I am passionate about the intersection of neuroscience and artificial inteligence. Below are some of the research areas I would be most excited to explore in a PhD journey:</p>
+            <p>I am passionate about the intersection of neuroscience and artificial intelligence. Below are some of the research areas I would be most excited to explore in a PhD journey:</p>
         </div>
-        <ul class="fancy-list">
-            <li>
-                <strong>Computational Models of Memory:</strong>
-                <br>Using computational models to investigate how time is encoded in memory traces, examining the temporal dynamics that drive learning and recall.
-            </li>
-            <li>
-                <strong>Algorithms for High-Dimensional Data:</strong>
-                <br>Developing algorithms to efficiently navigate and extract valuable insights from high-dimensional neural and genetic datasets.
-            </li>
-            <li>
-                <strong>Personalized Medicine:</strong>
-                <br>Creating predictive computational models that tailor medical treatment outcomes based on individual genetic, neural, and behavioral data.
-            </li>
-            <li>
-                <strong>Neuro-AI Interfaces:</strong>
-                <br>Exploring AI systems that integrate neural processes, aiming for interpretable, biologically plausible designs that mimic cognitive functions.
-            </li>
+        <ul>
+            <li><strong>Computational Models of Memory:</strong> Investigating how time is encoded in memory traces and understanding the temporal dynamics of learning and recall.</li>
+            <li><strong>Algorithms for High-Dimensional Data:</strong> Creating algorithms to extract insights from high-dimensional neural and genetic datasets.</li>
+            <li><strong>Personalized Medicine:</strong> Developing predictive models to tailor treatments based on individual genetic, neural, and behavioral data.</li>
+            <li><strong>Neuro-AI Interfaces:</strong> Designing AI systems that integrate with neural processes to achieve biologically plausible, interpretable outcomes.</li>
         </ul>
     </section>
-
 
     <!-- History Section -->
     <section id="history">
         <h2>History</h2>
         <ul>
-            <li>
-                <strong>October 2024:</strong> Upcoming Teaching Assistantship role at the University of Amsterdam in the BSc. Psychobiology and MRes. Brain and Cognitive Sciences.
-            </li>
-            <li>
-                <strong>September 2024:</strong> Started Literature Review on structure-aware pretext self-supervised tasks for EEG data under the supervision of Prof. Marijn van Wingerden.
-            </li>
-            <li>
-                <strong>July 2024:</strong> Completed Research Project 1 with a grade of 8.5/10 (Dutch grading system).
-                <br>
-                <img src="july2024.jpeg" alt="July 2024 Image" style="width: 200px; height: auto; margin-top: 10px;">
-            </li>
-            <li>
-                <strong>June 2024:</strong> Attended the 2024 Amsterdam Brain Cognition summer school, focusing on Neuro-AI.
-                <br>
-                <img src="june2024.jpeg" alt="June 2024 Image" style="width: 200px; height: auto; margin-top: 10px;">
-            </li>
-            <li>
-                <strong>January 2024:</strong> Began Research Project 1 at the Computational Neuroscience lab by Radboud University (NL), focusing on interpretable functional-genetic models of the zebrafish brain.
-                <br>
-                <img src="january2024.jpeg" alt="January 2024 Image" style="width: 200px; height: auto; margin-top: 10px;">
-            </li>
-            <li>
-                <strong>October 2023:</strong> Participated in the Dutch National Science weekend at Mindlabs (Tilburg, NL), showcasing BCI setups for spelling tasks.
-                <br>
-                <img src="october2023.jpeg" alt="October 2023 Image" style="width: 200px; height: auto; margin-top: 10px;">
-            </li>
-            <li>
-                <strong>September 2023:</strong> Commenced Research Master’s in Brain and Cognitive Sciences at the University of Amsterdam (NL).
-                <br>
-                <img src="september2023.jpeg" alt="September 2023 Image" style="width: 200px; height: auto; margin-top: 10px;">
-            </li>
-            <li>
-                <strong>July 2023:</strong> Graduated with a Bachelor’s degree (BSc.) in Cognitive Science and Artificial Intelligence from Tilburg University (NL).
-                <br>
-                <img src="july2023.jpeg" alt="July 2023 Image" style="width: 200px; height: auto; margin-top: 10px;">
-            </li>
+            <li><strong>October 2024:</strong> Upcoming Teaching Assistantship role at the University of Amsterdam in the BSc. Psychobiology and MRes. Brain and Cognitive Sciences.</li>
+            <li><strong>September 2024:</strong> Started Literature Review on structure-aware pretext self-supervised tasks for EEG data under the supervision of Prof. Marijn van Wingerden.</li>
+            <li><strong>July 2024:</strong> Completed Research Project 1 with a grade of 8.5/10 (Dutch grading system).</li>
+            <li><strong>June 2024:</strong> Attended the 2024 Amsterdam Brain Cognition summer school, focusing on Neuro-AI.</li>
+            <li><strong>January 2024:</strong> Began Research Project 1 at the Computational Neuroscience lab by Radboud University (NL), focusing on interpretable functional-genetic models of the zebrafish brain.</li>
         </ul>
     </section>
 
     <!-- CV Section -->
     <section id="cv">
         <h2>Curriculum Vitae</h2>
-                <p>Download my CV <a href="https://drive.google.com/file/d/1ep6hzrQfkc4EBcbLPJKpleObO2MxcmhZ/view?usp=sharing" target="_blank">here</a>.</p>
+        <p>Download my CV <a href="https://drive.google.com/file/d/1ep6hzrQfkc4EBcbLPJKpleObO2MxcmhZ/view?usp=sharing" target="_blank">here</a>.</p>
     </section>
 
     <!-- Projects Section -->
