@@ -129,9 +129,11 @@
             margin-top: 20px;
         }
         
+        /* Ensure uniform size for gallery images */
         .image-gallery img {
             width: 100%;
-            height: auto;
+            height: 200px; /* Fixed height for all images */
+            object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
@@ -140,6 +142,7 @@
         .image-gallery img:hover {
             transform: scale(1.05);
         }
+
 
     </style>
 </head>
@@ -174,9 +177,11 @@
     <!-- PhD Candidacy Section -->
     <section id="why-phd-candidate">
         <h2>Why I Would Make a Strong PhD Candidate</h2>
+        <div class="highlight">
         <p>During my academic journey, I have had the opportunity to learn from leading experts in the field. Below are some of the key courses I’ve succesfully completed:</p>
+        </div>
         <ul>
-            <li><strong>Python Programming:</strong> Prof. dr. ir. Pieter Spronck</li>
+            <li><strong>(Advanced) Python Programming:</strong> Prof. dr. ir. Pieter Spronck</li>
             <li><strong>Computer Vision:</strong> Prof. dr. Eric Postma</li>
             <li><strong>Neural Cognitive Modeling:</strong> Dr. Raquel Garrido Alhama and Dr. Willem Zuidema</li>
             <li><strong>Neuroimaging:</strong> Dr. Steven Scholte and Dr. Joe Bathelt</li>
@@ -185,14 +190,14 @@
         <p>My focus has been on applying theoretical knowledge to real-world problems, developing practical skills in <strong>Python programmming, machine/deep learning, and computational modeling</strong>. I am proactive, adaptable, and enjoy planning and organizing to ensure progress, qualities that I believe are crucial for a successful PhD journey.</p>
 
         <div class="highlight">
-        <p>My academic journey has provided me with a blend of interdisciplinary skills, research experience, and practical knowledge. Below are key factors that make me a strong PhD candidate:</p>
+        <p>My academic journey has provided me with a blend of interdisciplinary skills, research experience, and practical knowledge. Below are key factors whihc I belive would make a strong PhD candidate:</p>
         </div>
         <h3>1. Research Projects</h3>
         <p>Throughout my master’s, I have been / will be involved in several research projects that honed my computational and analytical skills. For example, my first research project at Radboud University explored <strong> interpretable functional-genetic models of the zebrafish brain</strong>, working with data collected through light-sheet microscopy.</p>
         <h3>2. Literature Thesis</h3>
-        <p>My literature review on <strong>structure-aware self-supervised learning for EEG data</strong> has been deepening my understanding of neural data analysis and self-supervised learning. I am working closely with Prof. Marijn van Wingerden, further strengthening my research skills and academic writing skills.</p>
+        <p>My literature review on <strong>structure-aware self-supervised learning for EEG data</strong> has been deepening my understanding of electroencephalogry structure and self-supervised learning. I am working closely with Prof. Marijn van Wingerden, further strengthening my research skills and academic writing skills.</p>
         <h3>3. Interdisciplinarity</h3>
-        <p>My current master's program has been encouraging me to take an interdisciplinary approach to research, allowing me to merge knowledge from <strong>computational neuroscience, cognitive science, and artificial intelligence</strong>. This interdisciplinary foundation is preparing me to tackle problems in neuroscience from multiple angles.</p>
+        <p>My current master's program has been encouraging me to take an interdisciplinary approach to research, allowing me to merge knowledge from <strong>(computational) neuroscience, cognitive science, and artificial intelligence</strong>. This interdisciplinary foundation is preparing me to tackle problems in neuroscience from multiple angles.</p>
         <h3>4. Extracurricular Activities</h3>
         <p>Outside of coursework, I am actively involved in various extracurricular activities, such as contributing to the <strong>Amsterdam Brain and Cognition Journal</strong>. Through this involvement, my goal is to strengthen my writing skills, learn about the peer-review prcoess and contribute towards open-access science.</p>
     </section>
@@ -226,7 +231,7 @@
             <li><strong>July 2023:</strong> Gradueted with a BSc. in Cognitive Science and Artificial Intelligence at Tilburg University (NL).</li>
         </ul>
         <!-- Image Gallery -->
-        <h3>Event Gallery</h3>
+        <h3>History Gallery</h3>
         <div class="image-gallery">
             <img src="july2024.jpeg" alt="July 2024 Image">
             <img src="june2024.jpeg" alt="June 2024 Image">
