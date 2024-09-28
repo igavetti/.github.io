@@ -129,11 +129,10 @@
             margin-top: 20px;
         }
         
-        /* Ensure uniform size for gallery images */
         .image-gallery img {
             width: 100%;
-            height: 200px; /* Fixed height for all images */
-            object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+            height: 200px;
+            object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
@@ -142,6 +141,48 @@
         .image-gallery img:hover {
             transform: scale(1.05);
         }
+        
+        /* Lightbox CSS */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10%;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 80%;
+        }
+        
+        .lightbox img {
+            border-radius: 8px;
+        }
+        
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        #caption {
+            margin-top: 10px;
+            color: white;
+            font-size: 18px;
+        }
+
 
 
     </style>
@@ -231,15 +272,35 @@
             <li><strong>July 2023:</strong> Graduated with a BSc. in Cognitive Science and Artificial Intelligence at Tilburg University (NL).</li>
         </ul>
         <!-- Image Gallery -->
-        <h3>History Gallery</h3>
+        <h3>Event Gallery</h3>
         <div class="image-gallery">
-            <img src="july2024.jpeg" alt="July 2024 Image">
-            <img src="june2024.jpeg" alt="June 2024 Image">
-            <img src="january2024.jpeg" alt="January 2024 Image">
-            <img src="october2023.jpeg" alt="October 2023 Image">
-            <img src="september2023.jpeg" alt="September 2023 Image">
-            <img src="july2023.jpeg" alt="July 2023 Image">
+            <a href="july2024.jpeg" class="lightbox-trigger">
+                <img src="july2024.jpeg" alt="July 2024 Image">
+            </a>
+            <a href="june2024.jpeg" class="lightbox-trigger">
+                <img src="june2024.jpeg" alt="June 2024 Image">
+            </a>
+            <a href="january2024.jpeg" class="lightbox-trigger">
+                <img src="january2024.jpeg" alt="January 2024 Image">
+            </a>
+            <a href="october2023.jpeg" class="lightbox-trigger">
+                <img src="october2023.jpeg" alt="October 2023 Image">
+            </a>
+            <a href="september2023.jpeg" class="lightbox-trigger">
+                <img src="september2023.jpeg" alt="September 2023 Image">
+            </a>
+            <a href="july2023.jpeg" class="lightbox-trigger">
+                <img src="july2023.jpeg" alt="July 2023 Image">
+            </a>
         </div>
+        
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="caption"></div>
+        </div>
+
     </section>
 
     <!-- CV Section -->
