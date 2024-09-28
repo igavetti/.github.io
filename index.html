@@ -120,6 +120,27 @@
             height: 300px;
             border-radius: 0; 
         }
+        
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
     </style>
 </head>
 
@@ -200,9 +221,20 @@
             <li><strong>July 2024:</strong> Completed Research Project 1 with a grade of 8.5/10 (Dutch grading system).</li>
             <li><strong>June 2024:</strong> Attended the 2024 Amsterdam Brain Cognition summer school, focusing on Neuro-AI.</li>
             <li><strong>January 2024:</strong> Began Research Project 1 at the Computational Neuroscience lab by Radboud University (NL), focusing on interpretable functional-genetic models of the zebrafish brain.</li>
+            <li><strong>October 2023:</strong> Participated in the Dutch National Science weekend at Mindlabs (Tilburg, NL), showcasing BCI setups for spelling tasks.</li>
             <li><strong>September 2023:</strong> Began Research Master Program in Brain and Cognitive Sciences at the University of Amsterdam (NL).</li>
             <li><strong>July 2023:</strong> Gradueted with a BSc. in Cognitive Science and Artificial Intelligence at Tilburg University (NL).</li>
         </ul>
+        <!-- Image Gallery -->
+        <h3>Event Gallery</h3>
+        <div class="image-gallery">
+            <img src="july2024.jpeg" alt="July 2024 Image">
+            <img src="june2024.jpeg" alt="June 2024 Image">
+            <img src="january2024.jpeg" alt="January 2024 Image">
+            <img src="october2023.jpeg" alt="October 2023 Image">
+            <img src="september2023.jpeg" alt="September 2023 Image">
+            <img src="july2023.jpeg" alt="July 2023 Image">
+        </div>
     </section>
 
     <!-- CV Section -->
