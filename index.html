@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilaria Gavetti - Personal Website</title>
+    <title>Ilaria Gavetti – Personal Website</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -47,10 +47,10 @@
 
         nav a {
             color: white;
-            margin: 0 20px;
+            margin: 0 18px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1em;
+            font-size: 1.05em;
         }
 
         section {
@@ -59,14 +59,30 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
+            max-width: 950px;
         }
 
         h2 {
             font-size: 2em;
             border-bottom: 2px solid #3A7D99;
             padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
             margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: #eaf4fc;
+            border-left: 5px solid #3A7D99;
+            padding: 15px;
+            margin: 25px 0;
+            font-weight: bold;
         }
 
         ul {
@@ -79,20 +95,36 @@
             line-height: 1.6em;
         }
 
-        .profile-pic {
-            border-radius: 50%;
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            margin-bottom: 20px;
+        /* TABLE */
+        .cv-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            font-size: 0.95em;
         }
 
-        .highlight {
-            background-color: #eaf4fc;
-            border-left: 5px solid #3A7D99;
-            padding: 15px;
-            margin: 20px 0;
+        .cv-table caption {
+            caption-side: top;
+            text-align: left;
             font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #3A7D99;
+        }
+
+        .cv-table th,
+        .cv-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .cv-table th {
+            background-color: #eaf4fc;
+        }
+
+        .cv-table tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
 
         footer {
@@ -100,7 +132,7 @@
             padding: 20px;
             background-color: #3A7D99;
             color: white;
-            margin-top: 40px;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -110,8 +142,8 @@
 <nav>
     <a href="#about">About</a>
     <a href="#education">Education</a>
+    <a href="#training">Training & Skills</a>
     <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#cv">CV</a>
     <a href="#contact">Contact</a>
@@ -127,6 +159,7 @@
 
 <section id="about">
     <h2>About Me</h2>
+
     <img src="profile4.jpeg" alt="Ilaria Gavetti" class="profile-pic">
 
     <p>
@@ -138,8 +171,8 @@
     <p>
         My academic background combines <strong>cognitive science, artificial intelligence,
         and computational neuroscience</strong>. I am particularly interested in how
-        inflammatory processes following preterm birth interact with neuroendocrine signaling,
-        and how computational approaches can help model these complex mechanisms.
+        inflammatory processes following preterm birth interact with neuroendocrine
+        functioning, and how computational approaches can help model these mechanisms.
     </p>
 </section>
 
@@ -154,8 +187,7 @@
 
         <li>
             <strong>MSc (Research) in Brain and Cognitive Sciences</strong> — University of Amsterdam (NL)<br>
-            <em>2023–2025 · GPA: 8.5/10 (cum laude)</em><br>
-            Literature thesis: <strong>Graph Structures in Self-Supervised Learning for EEG Data</strong>
+            <em>2023–2025 · GPA: 8.5/10 (cum laude)</em>
         </li>
 
         <li>
@@ -165,12 +197,108 @@
     </ul>
 </section>
 
+<section id="training">
+    <h2>Academic Training & Skill Development</h2>
+
+    <table class="cv-table">
+        <caption>Main coursework and acquired skills by degree</caption>
+        <thead>
+            <tr>
+                <th>Degree</th>
+                <th>Main Courses</th>
+                <th>Skills Acquired</th>
+                <th>Tools & Methods</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>
+                    <strong>BSc</strong><br>
+                    Cognitive Science & AI<br>
+                    <em>Tilburg University</em>
+                </td>
+                <td>
+                    Advanced Python Programming<br>
+                    Machine Learning<br>
+                    Deep Learning<br>
+                    Computer Vision<br>
+                    Cognitive Neuroscience
+                </td>
+                <td>
+                    Programming foundations<br>
+                    Data analysis & feature extraction<br>
+                    EEG signal understanding<br>
+                    Reproducible scientific workflows
+                </td>
+                <td>
+                    Python, NumPy<br>
+                    Scikit-learn<br>
+                    MNE-Python<br>
+                    Git
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>MSc (Research)</strong><br>
+                    Brain & Cognitive Sciences<br>
+                    <em>University of Amsterdam</em>
+                </td>
+                <td>
+                    Computational Cognitive Neuroscience<br>
+                    Neural & Cognitive Modelling<br>
+                    Neuroimaging (BOLD MRI)<br>
+                    Self-Supervised Learning (Literature Thesis)
+                </td>
+                <td>
+                    Computational modelling of neural systems<br>
+                    Statistical inference in neuroscience<br>
+                    EEG & fMRI analysis<br>
+                    Critical assessment of ML methods
+                </td>
+                <td>
+                    PyTorch<br>
+                    Pandas / SciPy<br>
+                    Matplotlib / Seaborn<br>
+                    Graph-based approaches
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>PhD</strong><br>
+                    Neuroendocrinology<br>
+                    <em>University of Lille</em>
+                </td>
+                <td>
+                    Neuroendocrinology<br>
+                    Inflammation & brain development<br>
+                    Animal experimentation & surgery
+                </td>
+                <td>
+                    Experimental design in animal models<br>
+                    Translational neuroscience<br>
+                    Integration of biological and computational data<br>
+                    Scientific writing and project management
+                </td>
+                <td>
+                    Animal models (mouse)<br>
+                    Experimental neuroscience techniques<br>
+                    Python-based analysis pipelines
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
 <section id="experience">
     <h2>Research & Teaching Experience</h2>
 
     <ul>
         <li>
-            <strong>Master Research Project</strong> — Donders Institute (NL)<br>
+            <strong>Master Research Projects</strong> — Donders Institute (NL)<br>
             <em>Computational Neuroscience Lab, Prof. Bernhard Englitz</em><br>
             Estimation of dynamical functional and genetic models in zebrafish using
             PyTorch-based neural networks on light-sheet microscopy data.
@@ -178,66 +306,38 @@
 
         <li>
             <strong>Teaching Assistant</strong> — University of Amsterdam (NL)<br>
-            Python-based practicals for neuroscience and psychobiology students.
+            Assisted Python-based practicals for neuroscience and psychobiology students.
         </li>
 
         <li>
-            <strong>Research Intern / Assistant</strong> — Tilburg University (NL)<br>
-            EEG preprocessing and analysis using MNE-Python; ERP, time–frequency and
-            connectivity analyses.
+            <strong>Research Assistant / Intern</strong> — Tilburg University (NL)<br>
+            EEG preprocessing and analyses (ERP, time–frequency, connectivity) using MNE-Python.
         </li>
-    </ul>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-
-    <div class="highlight">
-        Programming & Computational Methods
-    </div>
-
-    <ul>
-        <li>
-            <strong>Python (advanced)</strong>: NumPy, Pandas, SciPy, Scikit-learn, PyTorch,
-            Matplotlib, Seaborn
-        </li>
-        <li>Machine learning and deep learning for neuroscience</li>
-        <li>EEG and neuroimaging data analysis</li>
-        <li>Computational modeling of neural systems</li>
-    </ul>
-
-    <div class="highlight">
-        Languages
-    </div>
-
-    <ul>
-        <li>Italian — Native</li>
-        <li>English — Fully proficient</li>
-        <li>Spanish — Intermediate</li>
-        <li>French — Elementary</li>
     </ul>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
-    <ul>
-        <li><a href="https://drive.google.com/file/d/12yHzkQ9_TR9Aj7U4hasdC4blx2KxdX_Y/view" target="_blank">
-            Interpretable models for large-scale functional genetic data
-        </a></li>
 
-        <li><a href="https://drive.google.com/file/d/1gGFcxdllD6A7BM0-oQ9CGliV1se3K5ZD/view" target="_blank">
-            Exploring recurrency in bio-inspired CNNs
-        </a></li>
+    <ul>
+        <li>
+            <a href="https://drive.google.com/file/d/12yHzkQ9_TR9Aj7U4hasdC4blx2KxdX_Y/view" target="_blank">
+                Interpretable models for large-scale functional genetic data
+            </a>
+        </li>
+        <li>
+            <a href="https://drive.google.com/file/d/1gGFcxdllD6A7BM0-oQ9CGliV1se3K5ZD/view" target="_blank">
+                Exploring recurrency in bio-inspired convolutional neural networks
+            </a>
+        </li>
     </ul>
 </section>
 
 <section id="cv">
     <h2>Curriculum Vitae</h2>
     <p>
-        Download my full CV
-        <a href="https://drive.google.com/file/d/1DPZ0TgMVefGG11nLC4OTLHOOJLXI7uKI/view" target="_blank">
-            here
-        </a>.
+        Download my CV
+        <a href="https://drive.google.com/file/d/1DPZ0TgMVefGG11nLC4OTLHOOJLXI7uKI/view" target="_blank">here</a>.
     </p>
 </section>
 
@@ -245,7 +345,10 @@
     <h2>Contact</h2>
     <p>
         Email: <a href="mailto:ilaria.gavetti@gmail.com">ilaria.gavetti@gmail.com</a><br>
-        LinkedIn: <a href="https://linkedin.com/in/ilariagavetti">ilariagavetti</a>
+        LinkedIn:
+        <a href="https://linkedin.com/in/ilariagavetti" target="_blank">
+            linkedin.com/in/ilariagavetti
+        </a>
     </p>
 </section>
 
