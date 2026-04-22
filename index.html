@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilaria Gavetti - Personal Website</title>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Lato', sans-serif;
@@ -51,10 +53,6 @@
             font-size: 1.1em;
         }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-
         section {
             margin: 40px auto;
             padding: 40px;
@@ -71,23 +69,6 @@
             margin-bottom: 20px;
         }
 
-        .profile-pic {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin: 10px;
-            display: inline-block;
-        }
-
-        .highlight {
-            background-color: #eaf4fc;
-            border-left: 5px solid #3A7D99;
-            padding: 15px;
-            margin: 20px 0;
-            font-weight: bold;
-        }
-
         ul {
             list-style-type: none;
             padding: 0;
@@ -98,6 +79,22 @@
             line-height: 1.6em;
         }
 
+        .profile-pic {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: #eaf4fc;
+            border-left: 5px solid #3A7D99;
+            padding: 15px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -105,228 +102,156 @@
             color: white;
             margin-top: 40px;
         }
-
-        .project-list a {
-            font-weight: bold;
-            color: #3A7D99;
-        }
-
-        .project-list a:hover {
-            text-decoration: underline;
-        }
-
-        .large-square {
-            width: 300px; 
-            height: 300px;
-            border-radius: 0; 
-        }
-        
-        /* Image Gallery */
-        .image-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .image-gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .image-gallery img:hover {
-            transform: scale(1.05);
-        }
-        
-        /* Lightbox CSS */
-        .lightbox {
-            display: none;
-            position: fixed;
-            z-index: 999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            padding-top: 10%;
-        }
-        
-        .lightbox-content {
-            max-width: 90%;
-            max-height: 80%;
-        }
-        
-        .lightbox img {
-            border-radius: 8px;
-        }
-        
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            color: white;
-            font-size: 35px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        
-        #caption {
-            margin-top: 10px;
-            color: white;
-            font-size: 18px;
-        }
-
-
-
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#why-phd-candidate">PhD Candidacy</a>
-        <a href="#history">History</a>
-        <a href="#cv">Curriculum Vitae</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <!-- Header -->
-    <header>
-        <h1>Ilaria Gavetti</h1>
-        <p>PhD student in Neuroendocrinology | Studying how inflammatory processes following preterm birth interact with neuroendocrine processes</p>
-    </header>
+<header>
+    <h1>Ilaria Gavetti</h1>
+    <p>
+        PhD Student in Neuroendocrinology · University of Lille<br>
+        Eiffel Excellence Scholar (2025–2028)
+    </p>
+</header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div>
-            <img src="profile4.jpeg" alt="Ilaria Gavetti" class="profile-pic large-square">
-        </div>
-        <p>I am originally from northern Italy and I am currently pursuing a <strong>PhD in Neuroendocrinology</strong> at the <strong>University of Lille</strong>. My background spans Cognitive Science and Artificial Intelligence, with a focus on computational neuroscience. My goal is to contribute to advancing our understanding of brain function through computational tools.</p>
-        <p>*I am happy to provide proof or references for the content of my CV upon request. Alternatively, I can also provide the contact details of my supervisors directly.</p>
-    </section>
+<section id="about">
+    <h2>About Me</h2>
+    <img src="profile4.jpeg" alt="Ilaria Gavetti" class="profile-pic">
 
-   <!-- My background -->
-<section id="why-phd-candidate">
-    <h2>My background</h2>
+    <p>
+        I am a PhD student in <strong>Neuroendocrinology</strong> at the
+        <strong>University of Lille</strong>, working in the Lille Neuroendocrinology group
+        under the supervision of <strong>Dr. Konstantina Chachlaki</strong>.
+    </p>
 
-    <div class="highlight">
-        <p>During my academic journey, I have had the opportunity to learn from leading experts in the field. Below are some of the key courses I’ve successfully completed, together with the skills I acquired:</p>
-    </div>
-
-    <!-- COURSES TABLE -->
-    <div class="table-wrapper" role="region" aria-labelledby="courses-caption" tabindex="0">
-        <table class="cv-table">
-            <caption id="courses-caption">Courses and acquired skills</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Course</th>
-                    <th scope="col">Instructors</th>
-                    <th scope="col">Key skills</th>
-                    <th scope="col">Tools / Methods</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td><strong>(Advanced) Python Programming</strong></td>
-                    <td>Prof. dr. ir. Pieter Spronck; Dr. Raquel Garrido Alhama</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Computer Vision</strong></td>
-                    <td>Prof. dr. Eric Postma</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Cognitive Neuroscience</strong></td>
-                    <td>Prof. Marijn van Wingerden</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Neural Cognitive Modeling</strong></td>
-                    <td>Dr. Raquel Garrido Alhama; Dr. Willem Zuidema</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Neuroimaging</strong></td>
-                    <td>Dr. Steven Scholte; Dr. Joe Bathelt</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <p>My focus has been on applying theoretical knowledge to real-world problems, developing practical skills in <strong>Python programming, machine/deep learning, and computational modeling</strong>. I am proactive, adaptable, and enjoy planning and organizing to ensure progress, qualities that I believe are crucial for a successful PhD journey.</p>
-
-    <div class="highlight">
-        <p>My academic journey has provided me with a blend of interdisciplinary skills, research experience, and practical knowledge. Below are key factors which I believe would make me a strong PhD candidate:</p>
-    </div>
-
-    <h3>1. Research Projects</h3>
-    <p>Throughout my master’s, I have been involved in several research projects that enriched my computational and analytical skills. For example, my first research project at Radboud University (NL) explored <strong>interpretable functional-genetic models of the zebrafish brain</strong>, working with data collected through light-sheet microscopy. In the continuation of this project, I will additionally get hands-on experience in the Zebrafish facility at Radboud University, learning how the neural data is collected.</p>
-
-    <h3>2. Literature Thesis</h3>
-    <p>My literature review, titled <strong>Graph Structures in Self-Supervised Learning for EEG Data: A Review of Methodological Approaches</strong>, has deepened my understanding of EEG data as well as self-supervised learning. In this review, I touched upon graph theory and machine learning topics, in order to assess the most insightful approach to build graph structures from EEG data. I was supervised by Prof. Marijn van Wingerden.</p>
-
-    <h3>3. Interdisciplinarity</h3>
-    <p>My current Master's program has encouraged me to take an interdisciplinary approach to research, allowing me to merge knowledge from <strong>(computational) neuroscience, neurobiology, and artificial intelligence</strong>. This interdisciplinary foundation is preparing me to tackle problems in neuroscience from multiple angles. Furthermore, the completion of my master’s program requires involvement in all steps of the research cycle, spanning from literature review, to experimental design, data collection, as well as data analysis.</p>
-
-    <h3>4. Extracurricular Activities</h3>
-    <p>Outside of coursework, I am actively involved in extracurricular activities, such as contributing to the <strong>Amsterdam Brain and Cognition Journal</strong>. Through this involvement, my goal is to strengthen my writing skills, learn about the peer-review process, and contribute towards open-access science.</p>
-
+    <p>
+        My academic background combines <strong>cognitive science, artificial intelligence,
+        and computational neuroscience</strong>. I am particularly interested in how
+        inflammatory processes following preterm birth interact with neuroendocrine signaling,
+        and how computational approaches can help model these complex mechanisms.
+    </p>
 </section>
-``
 
-    <!-- CV Section -->
-    <section id="cv">
-        <h2>Curriculum Vitae</h2>
-        <p>Download my CV <a href="https://drive.google.com/file/d/1DPZ0TgMVefGG11nLC4OTLHOOJLXI7uKI/view?usp=sharing" target="_blank">here</a>.</p>
-    </section>
+<section id="education">
+    <h2>Education</h2>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul class="project-list">
-            <li><a href="https://drive.google.com/file/d/12yHzkQ9_TR9Aj7U4hasdC4blx2KxdX_Y/view?usp=sharing">Interpretable models for large-scale functional genetic data</a></li>
-            <li><a href="https://drive.google.com/file/d/1gGFcxdllD6A7BM0-oQ9CGliV1se3K5ZD/view?usp=sharing">Exploring recurrency in bio-inspired convolutional neural networks</a></li>
-            <li><a href="https://drive.google.com/file/d/1yK9Gf3KBrwNLaBslhoAsXqBbxFDWkgsz/view?usp=sharing">Machine learning for brain cancer diagnosis</a></li>
-            <li><a href="https://drive.google.com/file/d/1dgZOoXGMzGD0ql4dLgcqqfYkuNSR6WgV/view?usp=sharing">Unraveling shape completion in schizophrenic, bipolar, and healthy individuals: a study employing representational similarity analysis and convolutional neural networks</a></li>
-            <li><a href="https://drive.google.com/file/d/1EWSzID1NUimNTvfHb6faJMZlvWYulPG9/view?usp=sharing">Exploring the neural underpinnings of emotional episodic memory deficit in autism spectrum disorder</a></li>
-            
-        </ul>
-    </section>
+    <ul>
+        <li>
+            <strong>PhD in Neuroendocrinology</strong> — University of Lille (FR)<br>
+            <em>2025–2028 · Eiffel Excellence Scholarship</em>
+        </li>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out via <a href="mailto:ilaria.gavetti@gmail.com">email</a> or connect with me on <a href="https://linkedin.com/in/ilariagavetti">LinkedIn</a>.</p>
-    </section>
+        <li>
+            <strong>MSc (Research) in Brain and Cognitive Sciences</strong> — University of Amsterdam (NL)<br>
+            <em>2023–2025 · GPA: 8.5/10 (cum laude)</em><br>
+            Literature thesis: <strong>Graph Structures in Self-Supervised Learning for EEG Data</strong>
+        </li>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Ilaria Gavetti</p>
-    </footer>
+        <li>
+            <strong>BSc in Cognitive Science and Artificial Intelligence</strong> — Tilburg University (NL)<br>
+            <em>2020–2023 · GPA: 8.2/10</em>
+        </li>
+    </ul>
+</section>
+
+<section id="experience">
+    <h2>Research & Teaching Experience</h2>
+
+    <ul>
+        <li>
+            <strong>Master Research Project</strong> — Donders Institute (NL)<br>
+            <em>Computational Neuroscience Lab, Prof. Bernhard Englitz</em><br>
+            Estimation of dynamical functional and genetic models in zebrafish using
+            PyTorch-based neural networks on light-sheet microscopy data.
+        </li>
+
+        <li>
+            <strong>Teaching Assistant</strong> — University of Amsterdam (NL)<br>
+            Python-based practicals for neuroscience and psychobiology students.
+        </li>
+
+        <li>
+            <strong>Research Intern / Assistant</strong> — Tilburg University (NL)<br>
+            EEG preprocessing and analysis using MNE-Python; ERP, time–frequency and
+            connectivity analyses.
+        </li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="highlight">
+        Programming & Computational Methods
+    </div>
+
+    <ul>
+        <li>
+            <strong>Python (advanced)</strong>: NumPy, Pandas, SciPy, Scikit-learn, PyTorch,
+            Matplotlib, Seaborn
+        </li>
+        <li>Machine learning and deep learning for neuroscience</li>
+        <li>EEG and neuroimaging data analysis</li>
+        <li>Computational modeling of neural systems</li>
+    </ul>
+
+    <div class="highlight">
+        Languages
+    </div>
+
+    <ul>
+        <li>Italian — Native</li>
+        <li>English — Fully proficient</li>
+        <li>Spanish — Intermediate</li>
+        <li>French — Elementary</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="https://drive.google.com/file/d/12yHzkQ9_TR9Aj7U4hasdC4blx2KxdX_Y/view" target="_blank">
+            Interpretable models for large-scale functional genetic data
+        </a></li>
+
+        <li><a href="https://drive.google.com/file/d/1gGFcxdllD6A7BM0-oQ9CGliV1se3K5ZD/view" target="_blank">
+            Exploring recurrency in bio-inspired CNNs
+        </a></li>
+    </ul>
+</section>
+
+<section id="cv">
+    <h2>Curriculum Vitae</h2>
+    <p>
+        Download my full CV
+        <a href="https://drive.google.com/file/d/1DPZ0TgMVefGG11nLC4OTLHOOJLXI7uKI/view" target="_blank">
+            here
+        </a>.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>
+        Email: <a href="mailto:ilaria.gavetti@gmail.com">ilaria.gavetti@gmail.com</a><br>
+        LinkedIn: <a href="https://linkedin.com/in/ilariagavetti">ilariagavetti</a>
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Ilaria Gavetti</p>
+</footer>
 
 </body>
-
 </html>
