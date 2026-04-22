@@ -2,139 +2,163 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilaria Gavetti – Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilaria Gavetti – Personal Website</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+<style>
+:root {
+    --primary: #2F5D73;
+    --secondary: #6BA3A8;
+    --accent: #EAF3F4;
+    --text: #2E2E2E;
+    --light: #F7F9FA;
+}
 
-        header {
-            background: linear-gradient(90deg, #3A7D99, #61A9D8);
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.7;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            font-weight: 700;
-        }
+/* ---------- HEADER ---------- */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 70px 30px;
+    text-align: center;
+}
 
-        header p {
-            font-size: 1.3em;
-            margin-top: 10px;
-        }
+header h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2em;
+}
 
-        nav {
-            background-color: #3A7D99;
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+header p {
+    margin-top: 15px;
+    font-size: 1.2em;
+    opacity: 0.95;
+}
 
-        nav a {
-            color: white;
-            margin: 0 18px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.05em;
-        }
+/* ---------- NAV ---------- */
+nav {
+    background-color: white;
+    padding: 15px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
 
-        section {
-            margin: 40px auto;
-            padding: 40px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-            max-width: 950px;
-        }
+nav a {
+    color: var(--primary);
+    margin: 0 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #3A7D99;
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-        }
+nav a:hover {
+    color: var(--secondary);
+}
 
-        .profile-pic {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
+/* ---------- SECTIONS ---------- */
+section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 60px 50px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
 
-        .highlight {
-            background-color: #eaf4fc;
-            border-left: 5px solid #3A7D99;
-            padding: 15px;
-            margin: 25px 0;
-            font-weight: bold;
-        }
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+p {
+    font-size: 1.05em;
+}
 
-        ul li {
-            margin: 15px 0;
-            line-height: 1.6em;
-        }
+/* ---------- PROFILE ---------- */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
 
-        /* TABLE */
-        .cv-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 30px;
-            font-size: 0.95em;
-        }
+/* ---------- HIGHLIGHT ---------- */
+.highlight {
+    background-color: var(--accent);
+    border-left: 6px solid var(--secondary);
+    padding: 18px 22px;
+    margin: 30px 0;
+    border-radius: 6px;
+    font-weight: 600;
+}
 
-        .cv-table caption {
-            caption-side: top;
-            text-align: left;
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-bottom: 15px;
-            color: #3A7D99;
-        }
+/* ---------- LISTS ---------- */
+ul {
+    padding-left: 0;
+    list-style: none;
+}
 
-        .cv-table th,
-        .cv-table td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            vertical-align: top;
-        }
+ul li {
+    margin-bottom: 18px;
+}
 
-        .cv-table th {
-            background-color: #eaf4fc;
-        }
+/* ---------- TABLE ---------- */
+.cv-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 35px;
+    font-size: 0.95em;
+}
 
-        .cv-table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
+.cv-table caption {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.15em;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #3A7D99;
-            color: white;
-            margin-top: 50px;
-        }
-    </style>
+.cv-table th,
+.cv-table td {
+    padding: 14px 16px;
+    border: 1px solid #e1e6ea;
+    vertical-align: top;
+}
+
+.cv-table th {
+    background-color: var(--accent);
+    font-weight: 600;
+}
+
+.cv-table tr:nth-child(even) {
+    background-color: #fafcfd;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--primary);
+    color: white;
+    margin-top: 80px;
+}
+</style>
 </head>
 
 <body>
@@ -159,40 +183,37 @@
 
 <section id="about">
     <h2>About Me</h2>
-
     <img src="profile4.jpeg" alt="Ilaria Gavetti" class="profile-pic">
 
     <p>
         I am a PhD student in <strong>Neuroendocrinology</strong> at the
-        <strong>University of Lille</strong>, working in the Lille Neuroendocrinology group
-        under the supervision of <strong>Dr. Konstantina Chachlaki</strong>.
+        <strong>University of Lille</strong>, working under the supervision of
+        <strong>Dr. Konstantina Chachlaki</strong>.
     </p>
 
     <p>
-        My academic background combines <strong>cognitive science, artificial intelligence,
-        and computational neuroscience</strong>. I am particularly interested in how
-        inflammatory processes following preterm birth interact with neuroendocrine
-        functioning, and how computational approaches can help model these mechanisms.
+        My academic background bridges <strong>cognitive science,
+        artificial intelligence, and computational neuroscience</strong>.
+        I am interested in how inflammatory processes following preterm birth
+        interact with neuroendocrine systems, and how computational models
+        can help disentangle these mechanisms.
     </p>
 </section>
 
 <section id="education">
     <h2>Education</h2>
-
     <ul>
         <li>
             <strong>PhD in Neuroendocrinology</strong> — University of Lille (FR)<br>
             <em>2025–2028 · Eiffel Excellence Scholarship</em>
         </li>
-
         <li>
             <strong>MSc (Research) in Brain and Cognitive Sciences</strong> — University of Amsterdam (NL)<br>
-            <em>2023–2025 · GPA: 8.5/10 (cum laude)</em>
+            <em>2023–2025 · GPA 8.5/10 (cum laude)</em>
         </li>
-
         <li>
             <strong>BSc in Cognitive Science and Artificial Intelligence</strong> — Tilburg University (NL)<br>
-            <em>2020–2023 · GPA: 8.2/10</em>
+            <em>2020–2023 · GPA 8.2/10</em>
         </li>
     </ul>
 </section>
@@ -211,133 +232,58 @@
             </tr>
         </thead>
         <tbody>
-
             <tr>
-                <td>
-                    <strong>BSc</strong><br>
-                    Cognitive Science & AI<br>
-                    <em>Tilburg University</em>
-                </td>
-                <td>
-                    Advanced Python Programming<br>
-                    Machine Learning<br>
-                    Deep Learning<br>
-                    Computer Vision<br>
-                    Cognitive Neuroscience
-                </td>
-                <td>
-                    Programming foundations<br>
-                    Data analysis & feature extraction<br>
-                    EEG signal understanding<br>
-                    Reproducible scientific workflows
-                </td>
-                <td>
-                    Python, NumPy<br>
-                    Scikit-learn<br>
-                    MNE-Python<br>
-                    Git
-                </td>
+                <td><strong>BSc</strong><br><em>Tilburg University</em></td>
+                <td>Advanced Python, ML, DL, Computer Vision, Cognitive Neuroscience</td>
+                <td>Programming foundations, EEG understanding, reproducible research</td>
+                <td>Python, NumPy, Scikit-learn, MNE-Python</td>
             </tr>
-
             <tr>
-                <td>
-                    <strong>MSc (Research)</strong><br>
-                    Brain & Cognitive Sciences<br>
-                    <em>University of Amsterdam</em>
-                </td>
-                <td>
-                    Computational Cognitive Neuroscience<br>
-                    Neural & Cognitive Modelling<br>
-                    Neuroimaging (BOLD MRI)<br>
-                    Self-Supervised Learning (Literature Thesis)
-                </td>
-                <td>
-                    Computational modelling of neural systems<br>
-                    Statistical inference in neuroscience<br>
-                    EEG & fMRI analysis<br>
-                    Critical assessment of ML methods
-                </td>
-                <td>
-                    PyTorch<br>
-                    Pandas / SciPy<br>
-                    Matplotlib / Seaborn<br>
-                    Graph-based approaches
-                </td>
+                <td><strong>MSc</strong><br><em>University of Amsterdam</em></td>
+                <td>Computational Neuroscience, Neural Modelling, Neuroimaging</td>
+                <td>Neural modeling, statistical inference, ML evaluation</td>
+                <td>PyTorch, Pandas, SciPy, Seaborn</td>
             </tr>
-
             <tr>
-                <td>
-                    <strong>PhD</strong><br>
-                    Neuroendocrinology<br>
-                    <em>University of Lille</em>
-                </td>
-                <td>
-                    Neuroendocrinology<br>
-                    Inflammation & brain development<br>
-                    Animal experimentation & surgery
-                </td>
-                <td>
-                    Experimental design in animal models<br>
-                    Translational neuroscience<br>
-                    Integration of biological and computational data<br>
-                    Scientific writing and project management
-                </td>
-                <td>
-                    Animal models (mouse)<br>
-                    Experimental neuroscience techniques<br>
-                    Python-based analysis pipelines
-                </td>
+                <td><strong>PhD</strong><br><em>University of Lille</em></td>
+                <td>Neuroendocrinology, Inflammation, Animal experimentation</td>
+                <td>Experimental design, translational neuroscience</td>
+                <td>Animal models, Python pipelines</td>
             </tr>
-
         </tbody>
     </table>
 </section>
 
 <section id="experience">
     <h2>Research & Teaching Experience</h2>
-
     <ul>
         <li>
             <strong>Master Research Projects</strong> — Donders Institute (NL)<br>
-            <em>Computational Neuroscience Lab, Prof. Bernhard Englitz</em><br>
-            Estimation of dynamical functional and genetic models in zebrafish using
-            PyTorch-based neural networks on light-sheet microscopy data.
+            Computational modeling of functional and genetic zebrafish data using deep learning.
         </li>
-
         <li>
             <strong>Teaching Assistant</strong> — University of Amsterdam (NL)<br>
-            Assisted Python-based practicals for neuroscience and psychobiology students.
+            Python-based practicals for neuroscience students.
         </li>
-
         <li>
             <strong>Research Assistant / Intern</strong> — Tilburg University (NL)<br>
-            EEG preprocessing and analyses (ERP, time–frequency, connectivity) using MNE-Python.
+            EEG preprocessing and analysis using MNE-Python.
         </li>
     </ul>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
-
     <ul>
-        <li>
-            <a href="https://drive.google.com/file/d/12yHzkQ9_TR9Aj7U4hasdC4blx2KxdX_Y/view" target="_blank">
-                Interpretable models for large-scale functional genetic data
-            </a>
-        </li>
-        <li>
-            <a href="https://drive.google.com/file/d/1gGFcxdllD6A7BM0-oQ9CGliV1se3K5ZD/view" target="_blank">
-                Exploring recurrency in bio-inspired convolutional neural networks
-            </a>
-        </li>
+        <li><a href="https://drive.google.com/file/d/12yHzkQ9_TR9Aj7U4hasdC4blx2KxdX_Y/view">Interpretable functional–genetic models</a></li>
+        <li><a href="https://drive.google.com/file/d/1gGFcxdllD6A7BM0-oQ9CGliV1se3K5ZD/view">Recurrency in bio‑inspired CNNs</a></li>
     </ul>
 </section>
 
 <section id="cv">
     <h2>Curriculum Vitae</h2>
     <p>
-        Download my CV
-        <a href="https://drive.google.com/file/d/1DPZ0TgMVefGG11nLC4OTLHOOJLXI7uKI/view" target="_blank">here</a>.
+        Download my CV <a href="https://drive.google.com/file/d/1DPZ0TgMVefGG11nLC4OTLHOOJLXI7uKI/view" target="_blank">here</a>.
     </p>
 </section>
 
@@ -345,10 +291,7 @@
     <h2>Contact</h2>
     <p>
         Email: <a href="mailto:ilaria.gavetti@gmail.com">ilaria.gavetti@gmail.com</a><br>
-        LinkedIn:
-        <a href="https://linkedin.com/in/ilariagavetti" target="_blank">
-            linkedin.com/in/ilariagavetti
-        </a>
+        LinkedIn: <a href="https://linkedin.com/in/ilariagavetti">linkedin.com/in/ilariagavetti</a>
     </p>
 </section>
 
